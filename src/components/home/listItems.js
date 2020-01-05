@@ -11,20 +11,21 @@ import PeopleIcon from '@material-ui/icons/People';
 import BarChartIcon from '@material-ui/icons/BarChart';
 import LayersIcon from '@material-ui/icons/Layers';
 import AssignmentIcon from '@material-ui/icons/Assignment';
+import { Link } from "react-router-dom";
 
 export const mainListItems = (
   <div>
-    <ListItem button>
+    <ListItem button component={Link} to="/">
       <ListItemIcon>
         <DashboardIcon />
       </ListItemIcon>
       <ListItemText primary="Dashboard" />
     </ListItem>
-    <ListItem button>
+    <ListItem button component={Link} to="/checkout">
       <ListItemIcon>
         <ShoppingCartIcon />
       </ListItemIcon>
-      <ListItemText primary="Orders" />
+      <ListItemText primary="Orders"  />
     </ListItem>
     <ListItem button>
       <ListItemIcon>

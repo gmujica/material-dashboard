@@ -15,8 +15,7 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 // Components
 import { mainListItems, secondaryListItems } from '../components/home/listItems';
-import Home from '../pages/Home';
-import Checkout from '../pages/Checkout';
+import Main from '../router/Main'
 
 const drawerWidth = 240;
 
@@ -151,7 +150,7 @@ export default function Dashboard() {
         <List>{secondaryListItems}</List>
       </Drawer>
       <main className={classes.content}>
-        <Checkout />
+        <Main />
       </main>
     </div>
   );
