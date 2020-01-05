@@ -9,9 +9,9 @@ import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Link from '@material-ui/core/Link';
 // Components
-import Chart from '../components/Chart';
-import Deposits from '../components/Deposits';
-import Orders from '../components/Orders';
+import Chart from '../components/home/Chart';
+import Deposits from '../components/home/Deposits';
+import Orders from '../components/home/Orders';
 
 function Copyright() {
   return (
