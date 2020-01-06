@@ -107,9 +107,9 @@ const useStyles = makeStyles(theme => ({
       },
 }));
 
-export default function Home() {
-  const classes = useStyles();
-  const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
+const Home = () => {
+    const classes = useStyles();
+    const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
 
   return (
     <div className={classes.root}>
@@ -134,14 +134,17 @@ export default function Home() {
             <Grid item xs={12}>
               <Paper className={classes.paper}>
                 <Orders />
+                
               </Paper>
             </Grid>
           </Grid>
-          <Box pt={4}>
-            <Copyright />
+          <Box pt={8}>
+          <Copyright />
           </Box>
         </Container>
       </main>
     </div>
   );
 }
+
+export default Home
